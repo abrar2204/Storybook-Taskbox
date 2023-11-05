@@ -1,0 +1,10 @@
+fileignoreconfig:
+- filename: public/vite.svg
+  checksum: 5fe742fa65b1dea8626174e639646dd7665eb5976ae9caa62855bc9bb33aeeb0
+- filename: src/index.css
+  checksum: 62d96017179901299cd5afc4e00355723fa9d57c3c2414af8f3bfbe727f3514a
+- filename: yarn.lock
+  checksum: ab23ce230cbfebb86e383d9a54d49bd323e88106a187a25b4f88d064872d89fa
+- filename: src/assets/icon/percolate.svg
+  checksum: 3659f6351dcd3241b9ea6e197beb7c0d2c6c7fcee5bb4a7be730e191b8c9412c
+version: ""
