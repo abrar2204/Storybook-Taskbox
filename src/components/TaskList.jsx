@@ -1,8 +1,10 @@
 import React from "react";
 import Task from "./Task";
-import PropTypes from "prop-types";
+import { useTasks } from "../state/TaskContext";
 
-const TaskList = ({ tasks, isLoading, onPinTask, onArchiveTask }) => {
+const TaskList = () => {
+    const { tasks, isLoading, onPinTask, onArchiveTask } = useTasks();
+
     const LoadingRow = (
         <div className="loading-item">
             <span className="glow-checkbox" />
@@ -43,17 +45,6 @@ const TaskList = ({ tasks, isLoading, onPinTask, onArchiveTask }) => {
                 .map(task => <Task key={task.id} task={task} onPinTask={onPinTask} onArchiveTask={onArchiveTask} />)
         }
     </div>);
-}
-
-TaskList.propTypes = {
-    tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
-    isLoading: PropTypes.bool.isRequired,
-    onPinTask: PropTypes.func,
-    onArchiveTask: PropTypes.func
-}
-
-TaskList.defaultProps = {
-    isLoading: false
 }
 
 export default TaskList;
