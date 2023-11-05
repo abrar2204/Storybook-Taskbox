@@ -9,4 +9,6 @@ fileignoreconfig:
   checksum: 3659f6351dcd3241b9ea6e197beb7c0d2c6c7fcee5bb4a7be730e191b8c9412c
 - filename: src/components/Task.jsx
   checksum: eb50159ceb19b96037c3bb7eeb61afece563b44353f9d9b44d9fefc7d1365b0f
+- filename: src/components/TaskList.jsx
+  checksum: 4b28f5b02700bab930bbc05a47dcd617a8d1262470d98e450e0d8b682f8ce282
 version: ""

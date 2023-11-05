@@ -52,7 +52,7 @@ Task.propTypes = {
         id: PropTypes.string.isRequired,
         title: PropTypes.string.isRequired,
         state: PropTypes.string.isRequired
-    }),
+    }).isRequired,
     onArchiveTask: PropTypes.func,
     onPinTask: PropTypes.func
 }
