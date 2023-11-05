@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Task from "./Task";
 import { useTasks } from "../state/TaskContext";
 
 const TaskList = () => {
-    const { tasks, isLoading, onPinTask, onArchiveTask } = useTasks();
+    const { tasks, isLoading, onPinTask, onArchiveTask, fetchTasks } = useTasks();
+
+    useEffect(() => { fetchTasks() }, [fetchTasks]);
 
     const LoadingRow = (
         <div className="loading-item">
@@ -13,6 +15,7 @@ const TaskList = () => {
             </span>
         </div>
     );
+
     if (isLoading) {
         return (
             <div className="list-items" data-testid="loading" key={"loading"}>

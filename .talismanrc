@@ -3,8 +3,10 @@ fileignoreconfig:
   checksum: 5fe742fa65b1dea8626174e639646dd7665eb5976ae9caa62855bc9bb33aeeb0
 - filename: src/index.css
   checksum: 8b977a7485b60df9d8f6af52b4621185c4faddf13d17454c4dd90b0aaf74e107
+- filename: public/mockServiceWorker.js
+  checksum: f4f44d4a399286904af712ce09e4e13f4f153f82700caa7027fd2f94bceaf869
 - filename: yarn.lock
-  checksum: ab23ce230cbfebb86e383d9a54d49bd323e88106a187a25b4f88d064872d89fa
+  checksum: 85ea69f245b517c6641ef7ab64d2e0a4ac4a3a47ccc48c40dc85f10630c0dc5c
 - filename: src/assets/icon/percolate.svg
   checksum: 3659f6351dcd3241b9ea6e197beb7c0d2c6c7fcee5bb4a7be730e191b8c9412c
 - filename: src/components/Task.jsx

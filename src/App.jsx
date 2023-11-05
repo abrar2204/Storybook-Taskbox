@@ -3,14 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import TaskList from './components/TaskList'
-import { TaskProvider } from './state/TaskContext'
+import { TasksProvider } from './state/TaskContext'
 
 function App() {
   return (
     <div className="App">
-      <TaskProvider>
+      <TasksProvider>
         <TaskList />
-      </TaskProvider>
+      </TasksProvider>
     </div>
   )
 }
